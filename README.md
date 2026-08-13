@@ -224,4 +224,4 @@ This repository contains the reproducibility code, derived non-identifiable anal
 
 The individual-level Afghanistan MICS 2022–23 microdata are not redistributed in this repository. Researchers with authorized access to the MICS child dataset can use the provided extraction script to independently reproduce the vaccination-coverage estimates.
 
-A permanent DOI will be added following archival release through Zenodo. 
+Version 1.0.1 of this repository is permanently archived on Zenodo: https://doi.org/10.5281/zenodo.21925760 
