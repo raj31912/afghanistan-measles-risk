@@ -1,0 +1,4 @@
+# Optional raw MICS extraction
+pyreadstat
+# Optional map regeneration
+geopandas==1.1.2

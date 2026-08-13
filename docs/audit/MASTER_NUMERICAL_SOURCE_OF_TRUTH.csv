@@ -1,0 +1,33 @@
+category,metric,primary_value,lower_value,upper_value,display_text,units,manuscript_use,status,source
+Survey,National MCV1 (direct MICS),51.2,49.1,53.2,51.2% (95% CI 49.1–53.2),%,Use for national descriptive survey reporting,LOCKED,mics_national_official.csv
+Survey,National MCV1 standard error,1.0,,,1.0 percentage point,pp,Methods / uncertainty,LOCKED,mics_national_official.csv
+Survey,National MCV1 weighted n,6383.0,,,"6,383",weighted n,Methods / sample description,LOCKED,mics_national_official.csv
+Survey,National MCV1 unweighted n,6177.0,,,"6,177",children,Methods / sample description,LOCKED,mics_national_official.csv
+Survey,Provincial MCV1 range,,8.6,88.7,8.6% (Uruzgan)–88.7% (Bamyan),%,Results,LOCKED,provincial_results_recomputed.csv
+Transmission,Direct national R_cov,7.8576,,,7.86,index,National descriptive model result tied to direct MICS 51.2%,LOCKED,key_results_recomputed.csv
+Transmission,U5-weighted provincial MCV1 aggregate,50.56681539402753,,,50.57%,%,Use only when aggregating province-level model outputs,LOCKED,key_results_recomputed.csv
+Transmission,U5-weighted provincial R_cov aggregate,7.945929252533159,7.690345305309093,8.202344006034181,7.95 (conditional MC 95% interval 7.69–8.20),index,Model aggregate; label explicitly as U5-weighted,LOCKED,key_results_recomputed.csv
+Transmission,Provincial R_cov range,,2.6263499999999995,13.8003,2.63 (Bamyan)–13.80 (Uruzgan),index,Results,LOCKED,provincial_results_recomputed.csv
+Transmission,Provinces with R_cov > 1,34,,,34/34,provinces,Results,LOCKED,structural_sensitivity_results.csv
+Age sensitivity,U5-weighted MCV1 proxy with 0–8 months assigned zero MCV1-derived immunity,42.98179308492339,,,42.98%,%,Sensitivity analysis only,LOCKED,structural_sensitivity_results.csv
+Age sensitivity,U5-weighted R_cov under age-eligibility proxy,9.004039864653187,,,9.00,index,Sensitivity analysis only,LOCKED,structural_sensitivity_results.csv
+Population,National U5 population,8146035.52681,,,"8,146,036",children,Denominator for standardized model calculations,LOCKED,key_results_recomputed.csv
+Routine MCV1 gap,Annual children remaining unprotected by routine MCV1 (standardized upper-bound rate),863037.6264620527,,,"863,038/year",children/year,"Describe as standardized upper-bound counterfactual, not actual susceptibles",LOCKED,provincial_results_recomputed.csv
+Routine MCV1 gap,3.5-year routine-MCV1 unprotected accumulation,3020631.692617184,2923471.88328927,3118107.3315593363,3.02 million (conditional MC 95% interval 2.92–3.12 million),children,Upper-bound counterfactual only,LOCKED,key_results_recomputed.csv
+SIA,Preferential-targeting SIA requirement,4056042.0399888135,3906795.0210519265,4205774.204262473,4.06 million,children,Lower operational bound; denominator = total modelled U5,LOCKED,key_results_recomputed.csv
+SIA,Preferential-targeting SIA requirement (% U5),49.79160754504057,,,49.8%,% U5,Lower operational bound,LOCKED,key_results_recomputed.csv
+SIA,Random-targeting SIA requirement,7530647.856211407,7412834.064133138,7586402.775584033,7.53 million,children,Upper operational bound; denominator = total modelled U5,LOCKED,key_results_recomputed.csv
+SIA,Random-targeting SIA requirement (% U5),92.44555626386301,,,92.4%,% U5,Upper operational bound,LOCKED,key_results_recomputed.csv
+Dose requirement,"Single-dose coverage required at R0=15, VE1=0.93",100.35842293906809,,,100.36%,%,Theoretical requirement; >100% means unattainable with one dose,LOCKED,key_results_recomputed.csv
+Dose requirement,"Complete two-dose-series coverage required at R0=15, VE2=0.97",96.21993127147766,,,96.22%,%,Use empirical VE2=0.97; do not call operationally achievable without evidence,LOCKED,key_results_recomputed.csv
+Deterministic SEIR,"Attack rate, total U5 range",,15.894277473166188,92.00114726818192,15.9%–92.0%,% total U5,Primary attack-rate denominator,LOCKED,deterministic_seir_results.csv
+Deterministic SEIR,"Attack rate, initially susceptible range",,90.78517038076232,99.99989846588716,90.8%–100.0%,% initial susceptible,Report separately; never conflate with total-U5 attack rate,LOCKED,deterministic_seir_results.csv
+Stochastic,Outbreak-establishment probability range (9 illustrative provinces),,65.9,93.89999999999999,65.9%–93.9%,% introductions,Illustrative stochastic result; not population protection,LOCKED,stochastic_results_corrected.csv
+Stochastic,Stochastic simulation count per selected province,1000,,,"1,000",simulations/province,Methods,LOCKED,stochastic_results_corrected.csv
+Stochastic,Tau-leaping time step,0.1,,,0.1 day,day,Methods,LOCKED,revised_measles_analysis_v3.py
+Stochastic,Base random seed,42,,,42,seed,Methods / reproducibility,LOCKED,revised_measles_analysis_v3.py
+Natural history,Central latent period,8,6,8,8 days (sensitivity 6–8),days,Methods / sensitivity,LOCKED,seir_natural_history_sensitivity.csv
+Natural history,Central infectious period,4,3,5,4 days (sensitivity 3–5),days,Methods / sensitivity,LOCKED,seir_natural_history_sensitivity.csv
+Natural history,Approximate implied mean generation interval,12,,,≈12 days,days,Interpretation of central Markovian SEIR parameterization,LOCKED,central parameters
+Surveillance,Week-14 Kendall tau-b,0.33104795088367867,,,"τb=0.331, p=0.011",correlation,Retrospective ordinal geographic concordance; not validation,LOCKED,who_week14_measles_incidence_categories.csv + provincial_results_recomputed.csv
+Surveillance,Week-14 Spearman rho,0.4302580494917712,,,"ρ=0.430, p=0.011",correlation,Secondary rank association; not validation,LOCKED,who_week14_measles_incidence_categories.csv + provincial_results_recomputed.csv

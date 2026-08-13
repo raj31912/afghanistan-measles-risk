@@ -1,0 +1,35 @@
+{
+  "analysis_parameters": {
+    "horizon_years_gap": 3.5,
+    "infectious_days": 4.0,
+    "latent_days": 8.0,
+    "monte_carlo_draws": 100000,
+    "monte_carlo_seed": 20260810,
+    "outbreak_threshold": 10,
+    "r0": 15.0,
+    "r0_high": 18.0,
+    "r0_low": 12.0,
+    "seir_days": 365.0,
+    "seir_step_days": 0.25,
+    "stochastic_dt": 0.1,
+    "stochastic_seed": 42,
+    "stochastic_sims": 1000,
+    "ve_one_dose": 0.93,
+    "ve_two_dose": 0.97
+  },
+  "important_interpretation": {
+    "Rcov": "coverage-adjusted transmission-potential index; not empirical province-specific Re",
+    "WHO_comparison": "retrospective ordinal geographic concordance; not external validation",
+    "preferential_SIA": "idealized lower-bound targeting assumption",
+    "routine_gap": "standardized upper-bound routine-MCV1 protection gap; not actual susceptible population",
+    "stochastic_intervals": "demographic stochasticity conditional on fixed inputs; not MICS confidence intervals"
+  },
+  "input_sha256": {
+    "mics_national_official.csv": "daa3967443cf5ebf60f6c6f3b4ad9f03f611f0d0e38a282b37b369253511773b",
+    "mics_official_sampling_errors.csv": "188e8e0faf9654bccd9c39ba7dfde8c2d20d4252dc41042d7f64b571831f28ad",
+    "population_2026_provincial_clean.csv": "0d3b5d9f15a032d02f8a9cca3f14c8e09c59004cceb79e3f034d16208a674309",
+    "who_week14_measles_incidence_categories.csv": "63415bd9e8823583e356c47f2ac460dc670414962d2fa3be2fbf9709d95823de"
+  },
+  "province_count": 34,
+  "stochastic_run": true
+}
