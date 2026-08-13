@@ -218,13 +218,10 @@ The test suite checks:
 
 The repository contains no names, addresses, household identifiers or individual-level survey records. The bundled analysis inputs are province-level aggregate values from public reports/data sources. Raw MICS microdata are intentionally excluded.
 
-## Before public release
+## Repository Status 
 
-Before depositing this repository on GitHub/Zenodo, the authors should:
+This repository contains the reproducibility code, derived non-identifiable analysis inputs, and generated outputs associated with the manuscript Measles Outbreak Risk in Afghanistan: Provincial Immunity Gaps and Epidemic Potential Following Immunization System Disruption.
 
-1. select the repository license they wish to apply to their original code, consistent with source-data terms;
-2. add the final author/contributor metadata required by the chosen repository;
-3. create the persistent repository record/DOI;
-4. update the manuscript Data Availability statement with the permanent URL/DOI.
+The individual-level Afghanistan MICS 2022–23 microdata are not redistributed in this repository. Researchers with authorized access to the MICS child dataset can use the provided extraction script to independently reproduce the vaccination-coverage estimates.
 
-No DOI or public-repository URL is asserted in this package until that record actually exists.
+A permanent DOI will be added following archival release through Zenodo. 
