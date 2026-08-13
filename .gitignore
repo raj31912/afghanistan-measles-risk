@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Never commit raw restricted/sensitive survey microdata
+data/external/*.sav
+data/external/*.zsav
+data/external/*.dta
+
+# Optional externally downloaded cartographic boundaries
+data/external/*.gpkg
+data/external/*.shp
+data/external/*.shx
+data/external/*.dbf
+data/external/*.prj
